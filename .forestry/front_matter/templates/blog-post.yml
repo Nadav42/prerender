@@ -1,4 +1,30 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: hru
+  type: text
+  config:
+    required: false
+  label: hru
+- name: rutrtu
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: rutrtu
+- name: urtu
+  type: blocks
+  label: urtu
+  template_types: []
+  config:
+    min: 
+    max: 
+- name: rtu
+  type: include
+  config: {}
+  template: blog-post
+  label: rtu
